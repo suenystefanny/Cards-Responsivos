@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e9e3e8;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #434343;
+}
+
+main.cards {
+  display: flex;
+  padding: 32px;
+}
+
+main.cards section.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+main.cards section.cards:first-child {
+  margin-left: 0;
+}
+
+main.cards section.cards .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cards section.cards img {
+  width: 100%;
+}
+
+main.cards section.cards h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cards section.cards span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+main.cards section.cards button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+}
+
+main.cards section.cards.contato button {
+  background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+main.cards section.cards.compras button {
+  background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+main.cards section.cards.sobre button {
+  background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+main.cards section.cards.contato {
+  box-shadow: 20px 20px 50px -30px #a56afd;
+}
+
+main.cards section.cards.compras {
+  box-shadow: 20px 20px 50px -30px #90bbe9;
+}
+
+main.cards section.cards.sobre {
+  box-shadow: 20px 20px 50px -30px #f196b3;
+}
+
+@media screen and (max-width: 906px) {
+  main.cards {
+    flex-direction: column;
+  }
+
+  main.cards section.cards {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  main.cards section.cards:last-child {
+    margin-bottom: 0;
+  }
+
+  main.cards section.cards button {
+    font-size: 70%;
+  }
+}
